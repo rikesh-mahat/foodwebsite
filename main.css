@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html, body{
+    min-height: 100%;
+    width: 100%;
+}
+
+
+header{
+  
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top:0;
+    left:0;
+    padding:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+header .header-left{
+    
+    color: #FE7B23;
+}
+
+header .menu img, header nav ul .close-btn img{
+    height: 40px;
+    width: 70px;
+}
+
+header nav ul{
+    
+    position: absolute;
+    background-color: #FE7B23;
+    list-style: none;
+    top:0;
+    right: 0;
+    width: 250px;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    padding:1rem;
+    line-height: 1.8;
+    height: 100vh;
+    transition: 0.6s ease-in-out;
+    transform: translateX(110%);
+    a{
+        text-decoration: none;
+        color:white;
+    }
+
+    .close-btn img{
+        position: absolute;
+        left:2%;
+        top:4%;
+        color:white;
+    }
+    
+    
+}
+main section.first{
+    padding-top:90px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    min-height: 100vh;
+    width: 100%;
+    font-size: 2rem;
+    background-color: rgb(30,29,45);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+}
+
+main section.first .description{
+
+    min-width: 400px;
+    width:45%;
+    color:#FE7B23;
+    
+    h1, h3{
+        margin-bottom: 1.2rem;
+    }
+
+    
+    .primary-cta{
+        font-size: 1.1rem;
+        border-radius: 12px;
+        background-color: #FE7B23;
+        text-decoration: none;
+        padding:10px 20px;
+        color:white;
+        transition: transform 0.6s ease-in-out;
+        
+    }
+
+    .primary-cta:hover {
+
+        transform: translateY(10px);
+    }
+
+    
+}
+
+main section.first .image-container{
+
+    min-width: 450px;
+    width: 45%;
+
+    img{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:650px){
+    header .show-mobile{
+        display: none;
+    }
+    header nav ul{
+        font-size: 1.1rem;
+        width: 50vw;
+        display: flex;
+        justify-content: space-evenly;
+        height: 100%;
+        position: unset;
+        transform: translateX(0%);
+        background:none;
+
+        .nav-items a{
+            color:white;
+        }
+
+        .nav-items a:hover{
+            color:#FE7B23;
+        }
+    }
+
+    
+}
