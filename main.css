@@ -324,6 +324,19 @@ justify-content: center;
         opacity: 1;
       }
     }
+
+    .image-container{
+        svg{
+            margin:0 0.1rem;
+            border-radius: 5px;
+            padding: 5px 0;
+            background-color: #fe7b23;
+            color: white;
+            height: 35px;
+            width: 35px;
+        }
+    }
+
   }
 }
 
