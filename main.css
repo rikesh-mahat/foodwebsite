@@ -34,7 +34,7 @@ header nav ul .close-btn img {
 
 header nav ul {
   position: absolute;
-  background-color: #fe7b23;
+  backdrop-filter: blur(10px);
   list-style: none;
   top: 0;
   right: 0;
@@ -50,6 +50,9 @@ header nav ul {
   a {
     text-decoration: none;
     color: white;
+  }
+  a:hover{
+    color: #fe7b23;
   }
 
   .close-btn img {
@@ -348,6 +351,10 @@ justify-content: center;
   }
 }
 
+
+.active{
+    transform: translateX(0%);
+}
 @media  (max-width:650px) {
     main section.last{
         h1{

@@ -178,11 +178,27 @@
         
         <h2>Contact Us</h2>
         <div class="image-container">
-          
+
         </div>
       </div>
 
         
     </footer>
+
+    <script>
+      const menuBtn = document.querySelector('.menu');
+      const closeBtn = document.querySelector('.close-btn');
+      const menuBar = document.querySelector('nav ul');
+
+      menuBtn.addEventListener('click', ()=>{
+        menuBar.classList.add('active');
+       
+      })
+
+      closeBtn.addEventListener('click', ()=>{
+        menuBar.classList.remove('active');
+        
+      })
+    </script>
   </body>
 </html>
